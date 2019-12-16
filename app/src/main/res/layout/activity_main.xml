@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Kalkulator Ririn 2 "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/angkapertama"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="15dp" />
+
+    <CheckBox
+        android:id="@+id/chb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/angkakedua"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/angkapertama"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="15dp" />
+
+    <CheckBox
+        android:id="@+id/chb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chb1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/angkaketiga"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/angkakedua"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="15dp" />
+
+    <CheckBox
+        android:id="@+id/chb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chb2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/btntambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angkaketiga"
+        android:layout_marginTop="10dp"
+        android:text="+"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnkurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angkaketiga"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btntambah"
+        android:text="-"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnkali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angkaketiga"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btnkurang"
+        android:text="x"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/btnbagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angkaketiga"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btnkali"
+        android:text="/"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnkurang"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:text="HASIl"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="normal|bold" />
+
+
+</RelativeLayout>
